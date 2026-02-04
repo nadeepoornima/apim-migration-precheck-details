@@ -1,0 +1,7 @@
+-- User count on Primary userstore
+SELECT COUNT(*) FROM UM_USER;
+-- Check multpiple tenancy
+SELECT DISTINCT(UM_DOMAIN_NAME) FROM UM_TENANT;
+-- Avaibiliy of custom roles
+SELECT DISTINCT(UM_ROLE_NAME) FROM UM_ROLE;
+SELECT DISTINCT(UM_ROLE_NAME) FROM UM_HYBRID_ROLE;
